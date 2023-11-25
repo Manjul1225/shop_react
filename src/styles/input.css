@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-navBar {
+    @apply border border-black rounded text-center align-middle hover:text-blue-400 transition-all ease-out duration-300 px-[3px] mt-1;
+}
+
+.navbar {
+    @apply flex flex-row justify-between items-center text-4xl  align-middle text-center  border-b border-black pb-[10px];
+}
+
+.linknavbar {
+    @apply text-center text-3xl my-5 hover:text-blue-600 md:text-xl lg:text-2xl;
+}
+
+.active {
+    @apply text-blue-400;
+}
+
+.filter-active {
+    @apply  border rounded border-black p-[3px] m-1 font-subFont text-base lg:text-xl hover:text-black bg-blue-400 text-white;
+}
+
+.menu-navbar {
+    @apply flex flex-col items-center absolute bg-white whitespace-nowrap overflow-x-hidden transition-all ease-out duration-400;
+}
+
+.btn-carousel {
+    @apply bg-gray-200 rounded-full p-1 text-2xl opacity-80 md:text-3xl lg:text-4xl;
+}
+
+.btn-filter {
+    @apply border rounded border-black p-[3px] m-1 font-subFont text-base lg:text-xl hover:text-blue-400;
+}
+
+.btn-addToCart {
+    @apply px-4 py-1 mt-2 bg-blue-400 rounded-md text-white outline-none hover:bg-blue-500 focus:ring-4 shadow-lg transform active:scale-75 transition-transform;
+}
+
+.subtitle-about {
+    @apply text-2xl lg:text-3xl;
+}
+
+.container-about {
+    @apply flex flex-col gap-2 lg:gap-4;
+}
+
+.title-aboutUs {
+    @apply w-full max-w-lg font-aboutTitle text-3xl underline mb-4
+}
+
+.text-aboutUs {
+    @apply max-w-lg md:text-xl lg:text-2xl border-l pl-4 border-blue-300
+}
+
+.slideCarousel {
+    @apply shrink-0 h-full w-full;
+}
